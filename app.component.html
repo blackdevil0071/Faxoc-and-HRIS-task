@@ -1,0 +1,23 @@
+<marquee>Faxoc jobs and HRIS solutions</marquee>
+
+<div class="container">
+  <form [formGroup]="formGroup">
+    <mat-label>Employee Name: </mat-label><pre></pre>
+    <input
+    placeholder="Emp Name"
+      formControlName="employee"
+      matInput
+      type="text"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let item of filteredOptions let i=index"  [value]="item" >
+        {{ item }}
+      </mat-option>
+    </mat-autocomplete>
+  </form>
+</div>
+
+
+
+
