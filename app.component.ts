@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   title = 'autocomplete';
 
   options: string[] = ['Sam', 'Varun', 'Jasmine'];
-  filteredOptions: string[] = [];
+  filteredOptions: string[] = []; // initially empty
 
   selectedIndex = -1;
   formGroup: FormGroup;
