@@ -14,7 +14,6 @@ export class ServService {
     return this.http
       .get<any[]>('https://jsonplaceholder.typicode.com/users')
       .pipe(
-        // tap((response) => console.log('Response:', response)),
         map((response) => response.map((item) => item.name))
       );
   }
