@@ -38,11 +38,6 @@ export class AppComponent implements OnInit {
     });
   }
 
-  // filterData(enteredData: string) {
-  //   this.filteredOptions = this.options.filter((item) => {
-  //     return item.toLowerCase().indexOf(enteredData.toLowerCase()) > -1;
-  //   });
-  // }
 
   filterData(enteredData: string) {
     const enteredValue = enteredData.toLowerCase().trim();
